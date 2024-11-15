@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Portfolio</title>
+   <link rel="stylesheet" href="/Artify.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <script src="/artify.js"></script>
+   <!--<style>
+       .navbar {
+           position: fixed;
+           top: 0;
+           width: 100%;
+           z-index: 1000;
+           background: rgba(19, 18, 18, 0.774); /* Ensure visibility */
+       }
+
+       .fullscreen-div {
+           height: 100vh;
+           width: 100vw;
+           overflow: hidden;
+           background-image: url(/projects/media/homepage_bg.png);
+           background-size:cover;
+           background-position: 20px 0px auto 0px; 
+        }
+
+       #carouselExampleIndicators {
+           margin: 5rem 0px; /* Adjust as needed */
+           height:min-content;
+
+       }
+
+       .services {
+           display: flex;
+           justify-content: space-between;
+           flex-wrap: nowrap;
+          overflow-x: hidden;
+           height: 85vh;
+           padding: 0 10px 10px 10px;
+       }
+       .service-head{
+        width: 100%;
+        height: 10vh;
+       line-height: 10vh;
+        text-align: center;
+        margin: 100px auto 10px auto;
+       }
+
+       .services .card {
+           flex: 0 0 auto;
+           width: 18rem;
+           margin:auto 20px;
+       }
+       .card-img-top{
+        object-fit:cover;
+        height: 18rem;
+       }
+       .art-gallery{
+        height: min-content;
+           width: 100%;
+        text-align: center;  
+        margin-top: 10rem; 
+           
+       }  
+       .art-gallery img{
+        object-fit:contain;
+       }
+       .gallery-btn{
+            background-color: rgb(46, 48, 45);
+            color: rgb(218, 189, 137);
+            text-align: center;
+            border-radius:  25px 25px;
+            
+            
+       }
+       .order{
+        height: 90vh;
+        width: 100%;
+        margin-top: 5rem;
+        text-align: center;
+        background-image: url(/projects/media/order\ now.png);
+        }
+        .order button{
+            height: 62px;
+            width :270px;
+            border-radius: 30px;
+            border: none;
+            background-color: rgba(0, 0, 0, 0);
+            margin-top:73vh;
+            margin-left: 10px;
+
+        }
+        footer{
+            width: 100%;
+            height: 256px;
+            background-color: rgb(46, 44, 44);
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap :2px;
+            color: rgb(221, 202, 174);
+            margin-top: 10px;
+        }
+        .footer-element{
+         background-color: black;
+        text-align: center;
+        }
+        
+   </style>-->
+</head>
+<body>
+
+    <!-- Navbar --> 
+    <header class="navbar">
+        <div class="logo">
+            <video src="/media/artify logo.mp4" autoplay loop muted></video>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </header>
+
+    <!-- Fullscreen Div -->
+    <div class="fullscreen-div" id="home">
+       <!--<img id="home_pg" src="/web designing/projects/media/homepage_bg.png" class="img-fluid" alt="...">-->
+    </div>
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <video autoplay loop muted src="/media/sketch carousel.mp4"></video>
+          </div>
+          <div class="carousel-item">
+            <video autoplay loop muted src="/media/MANDALA carousel.mp4"></video>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Services -->
+    <div class="service-head"><h1>WE HAVE</h1></div>
+    <div class="services">
+         
+        <div class="card">
+            <img src="/media/skdivyansh.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">SIMPLE SKETCH</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Know More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/media/mandala art.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">MANDALA</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Know More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/media/skkamlesh edited.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Realistic</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Know More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/media/combine photo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Combined</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Know More</a>
+            </div>
+        </div>
+    </div>
+    <div class="art-gallery"><img  src="/media/our artwork.png" alt="">
+      <button type="button" class="btn gallery-btn btn-lg">See more</button>
+    </div>
+    <div class="order">
+        <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?"></button>
+    </div>
+    <footer>
+     <div class="footer-element">
+        <ul type=none> <li>About Us</li>
+            <li>Gallery</li>
+            <li>Artist</li>
+            <li>Blog</li>
+        </ul>
+     </div>
+     <div class="footer-element"> Contact Us: +91 7024926132</div>
+</footer>
+   
+</body>
+</html>
