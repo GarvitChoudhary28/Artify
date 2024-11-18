@@ -112,7 +112,6 @@
 </head>
 <body>
 
-    <!-- Navbar --> 
     <header class="navbar">
         <div class="logo">
             <video src="/media/artify logo.mp4" autoplay loop muted></video>
@@ -132,9 +131,7 @@
     </header>
 
     <!-- Fullscreen Div -->
-    <div class="fullscreen-div" id="home">
-       <!--<img id="home_pg" src="/web designing/projects/media/homepage_bg.png" class="img-fluid" alt="...">-->
-    </div>
+    <div class="fullscreen-div" id="home"></div>
 
     <!-- Carousel -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -164,55 +161,100 @@
     <div class="service-head"><h1>WE HAVE</h1></div>
     <div class="services">
          
-        <div class="card">
-            <img src="/media/skdivyansh.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">SIMPLE SKETCH</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Know More</a>
-            </div>
-        </div>
-        <div class="card">
-            <img src="/media/mandala art.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">MANDALA</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Know More</a>
-            </div>
-        </div>
-        <div class="card">
-            <img src="/media/skkamlesh edited.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Realistic</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Know More</a>
-            </div>
-        </div>
-        <div class="card">
-            <img src="/media/combine photo.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Combined</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Know More</a>
-            </div>
-        </div>
-    </div>
-    <div class="art-gallery"><img  src="/media/our artwork.png" alt="">
-      <button type="button" class="btn gallery-btn btn-lg">See more</button>
-    </div>
+      <div class="card">
+          <img src="/media/skdivyansh.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title">SIMPLE SKETCH</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Know More</a>
+          </div>
+      </div>
+      <div class="card">
+          <img src="/media/mandala art.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title">MANDALA</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Know More</a>
+          </div>
+      </div>
+      <div class="card">
+          <img src="/media/skkamlesh edited.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title">Realistic</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Know More</a>
+          </div>
+      </div>
+      <div class="card">
+          <img src="/media/combine photo.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title">Combined</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Know More</a>
+          </div>
+      </div>
+  </div>
+<!-- our artwork -->
+  <div class="art-gallery"><img  src="/media/our artwork.png" alt="">
+    <button type="button" class="btn gallery-btn btn-lg">See more</button>
+  </div>
+
+    <!-- Order Button -->
     <div class="order">
-        <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?"></button>
+        <button type="button" id="orderNowButton" class="btn btn-lg ">
+            Place Custom Sketch Order
+        </button>
     </div>
+
+    <!-- Order Form Modal -->
+    <div id="orderFormModal" class="order-modal">
+        <div class="order-modal-content">
+            <span class="close-modal" >&times;</span>
+            <h2>Place Your Order</h2>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="size">Sketch Size:</label>
+                    <select id="size" name="size" required>
+                        <option value="" disabled selected>Select Size</option>
+                        <option value="A4">A4</option>
+                        <option value="A3">A3</option>
+                        <option value="A2">A2</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="referenceImage">Upload Reference Image:</label>
+                    <input type="file" id="referenceImage" name="referenceImage" accept="image/*" required>
+                </div>
+                <div class="form-group">
+                    <label for="requirements">Additional Requirements:</label>
+                    <textarea id="requirements" name="requirements" placeholder="Any specific details..." rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Order</button>
+            </form>
+        </div>
+    </div>
+     <!-- Footer -->
+    <a href="https://wa.me/917024922806?text=Hello there ...Welcome to ARTIFY" target="_blank">
+      <button style="background-color: #25D366; color: white;margin-left: 90vh; padding: 10px 20px; border-radius: 5px; border: none; cursor: pointer;">
+        Order via WhatsApp
+      </button>
+    </a>
+    
+    <!-- Footer -->
     <footer>
-     <div class="footer-element">
-        <ul type=none> <li>About Us</li>
-            <li>Gallery</li>
-            <li>Artist</li>
-            <li>Blog</li>
-        </ul>
-     </div>
-     <div class="footer-element"> Contact Us: +91 7024926132</div>
-</footer>
-   
+        <div class="footer-element">
+            <ul type="none">
+                <li>About Us</li>
+                <li>Gallery</li>
+                <li>Artist</li>
+                <li>Blog</li>
+            </ul>
+        </div>
+        <div class="footer-element">Contact Us: +91 7024926132</div>
+    </footer>
 </body>
 </html>
